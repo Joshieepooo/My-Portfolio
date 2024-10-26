@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+		<!-- * Tab * -->
+		<title>Joshua Lopez</title>
+		<meta name="description" content="Joshua Lopez @Portfolio" />
+
+		<!-- * CSS * -->
+		<link rel="stylesheet" href="css/universal.css" />
+		<link rel="stylesheet" href="css/style.css" />
+
+		<!-- * JS * -->
+		<script src="js/script.js" defer></script>
+
+		<!-- * Fonts * -->
+		<link rel="stylesheet" href="css/fonts.css" />
+		<script
+			type="module"
+			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+		></script>
+		<link
+			href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+			rel="stylesheet"
+		/>
+	</head>
+
+	<body>
+		<!-- ? Background ? -->
+		<div class="video-background">
+			<video autoplay loop muted playsinline>
+				<source src="./motion backgrounds pack/31-44/37.mp4" type="video/mp4" />
+				Your browser does not support the video tag.
+			</video>
+			<div class="dark-overlay"></div>
+		</div>
+
+		<!-- ? Navbar ? -->
+		<header class="navbar">
+			<div class="navbar-contents">
+				<!-- ! Logo ! -->
+				<div class="navbar-logo-container">
+					<a href="./index.html" class="navbar-me-name" data-reveal="top"
+						>Joshua Lopez</a
+					>
+				</div>
+
+				<!-- ! Navigation ! -->
+				<ul class="navbar-container" data-reveal="top">
+					<li class="navbar-shrtct">
+						<a href="./index.html"> Home </a>
+					</li>
+					<li class="navbar-shrtct">
+						<a href="./index.html#about"> About </a>
+					</li>
+					<li class="navbar-shrtct">
+						<a href="./index.html#projects"> Projects </a>
+					</li>
+					<li class="navbar-shrtct">
+						<a href="./index.html#contact"> Contact </a>
+					</li>
+				</ul>
+
+				<!-- ! Menu Button (Burger) ! -->
+				<div class="navbar-menu-button">
+					<button id="menu-button" onclick="toggleHeader()" class="menu-button">
+						<span class="button-burger burger"></span>
+					</button>
+				</div>
+			</div>
+
+			<!-- ! Navbar Menu ! -->
+			<div class="navbar-menu">
+				<ul>
+					<li class="navbar-menu-shrtct">
+						<a href="./index.html"> Home </a>
+					</li>
+					<li class="navbar-menu-shrtct">
+						<a href="./index.html#about"> About </a>
+					</li>
+					<li class="navbar-menu-shrtct">
+						<a href="./index.html#projects"> Projects </a>
+					</li>
+					<li class="navbar-menu-shrtct">
+						<a href="./index.html#contact"> Contact </a>
+					</li>
+				</ul>
+			</div>
+		</header>
+
+		<!-- ? Home ? -->
+		<section class="home">
+			<div class="home-content">
+				<h1 class="home-primary" data-reveal="top">
+					Hey, My name is <br />Joshua Alen Lopez
+				</h1>
+				<div class="home-info">
+					<p class="home-secondary" data-reveal="top">
+						Driven by curiosity and creativity, I specialize in developing
+						user-friendly websites that solve real-world problems
+					</p>
+				</div>
+
+				<!-- ! Animated Button ! -->
+				<div class="home-button-area" data-reveal="top">
+					<a
+						href="./fls/Lopez - CV.pdf"
+						class="home-button home-button-size"
+						download
+					>
+						<span class="text">Download CV</span>
+						<span class="icon">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								aria-hidden="true"
+								role="img"
+								width="2em"
+								height="2em"
+								preserveAspectRatio="xMidYMid meet"
+								viewBox="0 0 24 24"
+							>
+								<path
+									fill="none"
+									stroke="currentColor"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									stroke-width="2"
+									d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 0 0 4.561 21h14.878a2 2 0 0 0 1.94-1.515L22 17"
+								></path>
+							</svg>
+						</span>
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<!-- ? About ? -->
+		<section id="about" class="about about-container">
+			<div class="about-main">
+				<h2 class="about-main-content">
+					<span class="about-primary" data-reveal="top">About Me</span>
+					<span class="about-secondary" data-reveal="top">
+						Welcome to my journey! I’m Joshua Lopez, a passionate web developer
+						dedicated to creating impactful digital experiences while
+						continuously honing my skills.
+					</span>
+				</h2>
+				<div class="about-other-contents">
+					<!-- ! Get To Know Me ! -->
+					<div>
+						<h3 class="about-oc-primary" data-reveal="left">Get to know me!</h3>
+						<div class="about-oc-secondary" data-reveal="left">
+							<p class="about-oc-s-para">
+								Hey! It's
+								<strong>Joshua Lopez</strong>, a
+								<strong>Web Developer</strong> based in Biñan City, Laguna. I've
+								worked on
+								<strong>remote</strong>
+								both independently and in collaboration with talented
+								individuals, crafting <strong>websites</strong> for personal,
+								business, and consumer use.
+							</p>
+							<p class="about-oc-s-para">
+								As a <strong>fresh graduate</strong> from the
+								<strong>Polytechnic University of the Philippines</strong>, I'm
+								passionate about exploring the digital product landscape. While
+								I'm still honing my skills in various areas, I'm open to
+								guidance and mentorship to further develop my expertise in this
+								dynamic field. Feel free to <strong>reach</strong> out.
+							</p>
+							<div class="about-button-area">
+								<a
+									href="./#contact"
+									class="about-button about-button-size button-color"
+									>Contact
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<!-- ! Skills ! -->
+					<div>
+						<h3 class="about-oc-primary" data-reveal="right">My Skills</h3>
+						<div class="skills" data-reveal="right">
+							<div class="skills-set">HTML</div>
+							<div class="skills-set">CSS</div>
+							<div class="skills-set">JavaScript</div>
+							<div class="skills-set">PHP</div>
+							<div class="skills-set">MySQL</div>
+							<div class="skills-set">Java</div>
+							<div class="skills-set">CPP</div>
+							<div class="skills-set">CS</div>
+							<div class="skills-set">VS Code</div>
+							<div class="skills-set">Eclipse</div>
+							<div class="skills-set">Adobe Photoshop</div>
+							<div class="skills-set">Adobe Illustrator</div>
+							<div class="skills-set">MS Office</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ? Projects ? -->
+		<section id="projects" class="projects projects-container">
+			<div class="projects-main">
+				<div class="projects-main-content" data-reveal="top">
+					<div>
+						<h2 class="projects-primary">Projects</h2>
+						<p class="projects-secondary">
+							Check out some of my latest projects with creative ideas.
+						</p>
+					</div>
+					<a
+						href="https://github.com/Joshieepooo"
+						class="projects-button projects-button-size"
+						target="_blank"
+						>Github
+					</a>
+				</div>
+
+				<!-- ! Projects Main ! -->
+				<ul class="projects-grid">
+					<!-- ! MGWR PC Online (Project 1) ! -->
+					<li>
+						<div class="project-card project-card-1">
+							<div class="project-card-content" data-reveal="left">
+								<p class="project-c-primary">Web Development</p>
+
+								<h3 class="project-oc-primary">MGWR PC Online</h3>
+
+								<p class="project-oc-secondary">
+									Developed a promotional website for showcasing PCs, laptops,
+									printers, and accessories, designed to enhance customer
+									engagement. The site features the shop’s mission, vision, and
+									core values, alongside an integrated inventory system, CMS,
+									and real-time statistics for streamlined management and
+									insights.
+								</p>
+
+								<a href="./mgwrpconline-proj.html" class="project-oc-button">
+									<span class="project-button-text">See Project</span>
+
+									<ion-icon
+										name="arrow-forward-outline"
+										aria-hidden="true"
+									></ion-icon>
+								</a>
+							</div>
+
+							<figure class="card-banner" data-reveal="right">
+								<img
+									src="./imgs/project-1.png"
+									width="650"
+									height="370"
+									loading="lazy"
+									alt="Web Design"
+									class="w-100"
+								/>
+							</figure>
+						</div>
+					</li>
+
+					<!-- ! My Portfolio (Project 2) ! -->
+					<li>
+						<div class="project-card project-card-2">
+							<div class="project-card-content" data-reveal="right">
+								<p class="project-c-primary">Web Development</p>
+
+								<h3 class="project-oc-primary">Joshua Lopez Portfolio</h3>
+
+								<p class="project-oc-secondary">
+									Designed a personal portfolio website to highlight my skills
+									and projects. This site offers a clean and user-friendly
+									interface, providing a snapshot of my experience, expertise,
+									and completed works. It serves as a gateway to my journey in
+									web development, featuring coding basics, design principles,
+									and project highlights.
+								</p>
+
+								<a href="./index.html#projects" class="project-oc-button">
+									<span class="project-button-text">See Project</span>
+
+									<ion-icon
+										name="arrow-forward-outline"
+										aria-hidden="true"
+									></ion-icon>
+								</a>
+							</div>
+
+							<figure class="card-banner" data-reveal="left">
+								<img
+									src="./imgs/project-2.png"
+									width="600"
+									height="367"
+									loading="lazy"
+									alt="Web Design"
+									class="w-100"
+								/>
+							</figure>
+						</div>
+					</li>
+
+					<!-- <li>
+						<div class="project-card project-card-3">
+							<div class="project-card-content" data-reveal="left">
+								<p class="project-c-primary">Web Development</p>
+
+								<h3 class="project-oc-primary">Quiz Hosting Platform</h3>
+
+								<p class="project-oc-secondary">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+									sed nisi neque. Morbi consectetur, orci ut suscipit cursus,
+									nisi ex congue ligula, et rutrum nisi eros in lectus.
+									Vestibulum eget lorem nec nisi tempus molestie ac sed orci
+								</p>
+
+								<a href="./index.html#projects" class="project-oc-button">
+									<span class="project-button-text">See Project</span>
+
+									<ion-icon
+										name="arrow-forward-outline"
+										aria-hidden="true"
+									></ion-icon>
+								</a>
+							</div>
+
+							<figure class="card-banner" data-reveal="right">
+								<img
+									src="./imgs/project-3.png"
+									width="600"
+									height="367"
+									loading="lazy"
+									alt="Web Design"
+									class="w-100"
+								/>
+							</figure>
+						</div>
+					</li>
+
+					<li>
+						<div class="project-card project-card-4">
+							<div class="project-card-content" data-reveal="left">
+								<p class="project-c-primary">Web Development</p>
+
+								<h3 class="project-oc-primary">To-Do List Web</h3>
+
+								<p class="project-oc-secondary">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+									sed nisi neque. Morbi consectetur, orci ut suscipit cursus,
+									nisi ex congue ligula, et rutrum nisi eros in lectus.
+									Vestibulum eget lorem nec nisi tempus molestie ac sed orci
+								</p>
+
+								<a href="./index.html#projects" class="project-oc-button">
+									<span class="project-button-text">See Project</span>
+
+									<ion-icon
+										name="arrow-forward-outline"
+										aria-hidden="true"
+									></ion-icon>
+								</a>
+							</div>
+
+							<figure class="card-banner" data-reveal="right">
+								<img
+									src="./imgs/project-4.png"
+									width="620"
+									height="370"
+									loading="lazy"
+									alt="Mobile Design"
+									class="w-100"
+								/>
+							</figure>
+						</div>
+					</li> -->
+				</ul>
+			</div>
+		</section>
+
+		<!-- ? Contacts ? -->
+		<section id="contact" class="contact contact-container">
+			<h2 class="contacts-main-content">
+				<h2 class="contact-primary" data-reveal="top">Contact</h2>
+				<span class="contact-secondary" data-reveal="top">
+					Feel free to reach out if you’d like to connect or discuss potential
+					collaborations!
+				</span>
+			</h2>
+
+			<!-- ! Form ! -->
+			<div class="contact-form-container">
+				<form action="https://api.web3forms.com/submit" method="POST">
+					<input
+						type="hidden"
+						name="access_key"
+						value="fa81ec5e-a698-45f6-bce3-0034396ff3b0"
+					/>
+
+					<div class="contact-form-field">
+						<label class="contact-form-label" for="name" data-reveal="left"
+							>Name
+						</label>
+						<input
+							required
+							placeholder="Enter Your Name"
+							type="text"
+							class="contact-form-input"
+							name="name"
+							id="name"
+							data-reveal="right"
+						/>
+					</div>
+					<div class="contact-form-field">
+						<label class="contact-form-label" for="email" data-reveal="left"
+							>Email
+						</label>
+						<input
+							required
+							placeholder="Enter Your Email"
+							type="email"
+							class="contact-form-input"
+							name="email"
+							id="email"
+							data-reveal="right"
+						/>
+					</div>
+					<div class="contact-form-field">
+						<label class="contact-form-label" for="subject" data-reveal="left"
+							>Subject
+						</label>
+						<input
+							placeholder="Enter Subject"
+							type="text"
+							class="contact-form-input"
+							name="subject"
+							id="subject"
+							data-reveal="right"
+						/>
+					</div>
+					<div class="contact-form-field">
+						<label class="contact-form-label" for="message" data-reveal="left"
+							>Message
+						</label>
+						<textarea
+							required
+							class="contact-form-input"
+							placeholder="Enter Your Message"
+							name="message"
+							id="message"
+							data-reveal="right"
+						>
+						</textarea>
+					</div>
+					<button
+						type="submit"
+						name="contact-submit"
+						class="contact-button contact-button-size"
+						data-reveal="right"
+					>
+						Submit
+					</button>
+				</form>
+			</div>
+		</section>
+
+		<!-- ? Footer ? -->
+		<footer>
+			<div class="footer-container">
+				<div class="footer-icons">
+					<a href="https://www.facebook.com/Jsh.Lpz.21"
+						><i class="bx bxl-facebook"></i
+					></a>
+					<a href="https://www.instagram.com/jsh.lpz.main/"
+						><i class="bx bxl-instagram"></i
+					></a>
+					<a href="https://x.com/iJoshiepooo"><i class="bx bxl-twitter"></i></a>
+					<a href="https://www.linkedin.com/in/joshua-alen-lopez-442287255/"
+						><i class="bx bxl-linkedin"></i
+					></a>
+					<a href="https://github.com/Joshieepooo"
+						><i class="bx bxl-github"></i
+					></a>
+				</div>
+
+				<!-- ! Shortcuts ! -->
+				<div class="footer-shrtcts">
+					<ul>
+						<li><a href="./index.html">Home</a></li>
+						<li><a href="./index.html#about">About</a></li>
+						<li><a href="./index.html#projects">Projects</a></li>
+						<li><a href="./index.html#contact">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<!-- ! Can Add Copyrights & Scroll Up Button ! -->
+		</footer>
+	</body>
+</html>
