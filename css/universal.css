@@ -1,117 +1,131 @@
-/* ? -- Color Shortcuts -- ? */
+/* ? -- Color Shortcuts Start -- ? */
 :root {
-  /* * -- Instead of White! -- * */
-  --off_white: #faf9f6;
-  --snow: #fffafa;
-  --ivory: #fffff0; /* * Favorite for Text Color * */
-  --alice_blue: #f0f8ff;
-  --ghost_white: #f8f8ff;
-  --marble: #f2f8fc;
-  --pearl: #fcfcf7;
-  --lavender: #f4f1f8;
-  --cold_steel: #f8f7f4;
+	/* * -- Instead of White! -- * */
+	--off_white: #faf9f6;
+	--snow: #fffafa;
+	--ivory: #fffff0; /* * Favorite for Text Color * */
+	--alice_blue: #f0f8ff;
+	--ghost_white: #f8f8ff;
+	--marble: #f2f8fc;
+	--pearl: #fcfcf7;
+	--lavender: #f4f1f8;
+	--cold_steel: #f8f7f4;
 
-  /* * -- Instead of Black! -- * */
-  --charcoal_gray: #171717; /* * Favorite for Shadow Color * */
-  --obsidian: #0b1215;
-  --midnight_blue: #101720;
-  --dark_slate-gray: #0d1717;
-  --rich_black: #020d19; /* * Favorite for Text Color * */
-  --deep_navy_blue: #011222;
+	/* * -- Instead of Black! -- * */
+	--charcoal_gray: #171717; /* * Favorite for Shadow Color * */
+	--obsidian: #0b1215;
+	--midnight_blue: #101720;
+	--dark_slate-gray: #0d1717;
+	--rich_black: #020d19; /* * Favorite for Text Color * */
+	--deep_navy_blue: #011222;
 
-  /* * -- Gray Bgs -- * */
-  --platinum: #e1e1e1;
-  --silver: #c0c0c0;
-  --white_smoke: #f5f5f5; /* * Favorite for Bg * */
-  --fresh_grey: #d0cfd3;
-  --onyx: #353839;
-  --davys_gray: #555555;
-  --gray: #808080;
+	/* * -- Gray Bgs -- * */
+	--platinum: #e1e1e1;
+	--silver: #c0c0c0;
+	--white_smoke: #f5f5f5; /* * Favorite for Bg * */
+	--fresh_grey: #d0cfd3;
+	--onyx: #353839;
+	--davys_gray: #555555;
+	--gray: #808080;
 
-  /* * -- Theme -- * */
-  --white_smoke: #f5f5f5; /* * Favorite for Bg for Things * */
-  --ivory: #fffff0; /* * Favorite for Text Color * */
-  --charcoal_gray: #171717; /* * Favorite for Shadow Color * */
-  --textnBG-color: #0b0c10;
-  --theme: #1f2833;
-  --theme2: #c5c6c7;
-  --theme3: #66fcf1;
-  --theme4: #45a29e;
+	/* * -- Theme -- * */
+	--white_smoke: #f5f5f5; /* * Favorite for Bg for Things * */
+	--ivory: #fffff0; /* * Favorite for Text Color * */
+	--charcoal_gray: #171717; /* * Favorite for Shadow Color * */
+	--textnBG-color: #0b0c10;
+	--theme: #1f2833;
+	--theme2: #c5c6c7;
+	--theme3: #66fcf1;
+	--theme4: #45a29e;
 }
 
-/* ? -- Universal -- ? */
+/* ? -- Color Shortcuts Start -- ? */
+/*
+/*
+/*
+/*
+/*
+/* ? -- Universal Start -- ? */
+
 *,
 *::after,
 *::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: inherit;
-  user-select: none;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: inherit;
+	user-select: none;
 }
 
 html {
-  font-size: 62.5%;
-  scroll-behavior: smooth;
+	font-size: 62.5%;
+	scroll-behavior: smooth;
 }
 
 @media only screen and (max-width: 1200px) {
-  html {
-    font-size: 59%;
-  }
+	html {
+		font-size: 59%;
+	}
 }
 
 @media only screen and (max-width: 900px) {
-  html {
-    font-size: 56%;
-  }
+	html {
+		font-size: 56%;
+	}
 }
 
 @media only screen and (min-width: 1125px) {
-  html {
-    font-size: 65%;
-  }
+	html {
+		font-size: 65%;
+	}
 }
 
 body {
-  font-family: "Source Sans Pro", sans-serif;
-  line-height: 1.5;
-  overflow-x: hidden;
-  overflow-y: scroll;
-  background: var(--textnBG-color);
-  background-size: cover;
-  background-position: center;
-  padding: 22rem 0 0 0;
+	font-family: "Source Sans Pro", sans-serif;
+	line-height: 1.5;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	background: var(--textnBG-color);
+	background-size: cover;
+	background-position: center;
+	padding: 22rem 0 0 0;
 }
 
 a {
-  text-decoration: none;
-  color: inherit;
+	text-decoration: none;
+	color: inherit;
 }
 
 li {
-  list-style: none;
+	list-style: none;
 }
 
 input:focus,
 button:focus,
 a:focus,
 textarea:focus {
-  outline: none;
+	outline: none;
 }
 
 button {
-  border: none;
-  cursor: pointer;
+	border: none;
+	cursor: pointer;
 }
 
 img {
-  height: auto;
+	height: auto;
 }
 
-/* ? -- Scrollbar -- ? */
+/* ? -- Universal End -- ? */
+/*
+/*
+/*
+/*
+/*
+/* ? -- Scrollbar Start -- ? */
+
 ::-webkit-scrollbar {
-  width: 1;
+	width: 1;
 }
 
 /* ::-webkit-scrollbar-track {
@@ -126,67 +140,82 @@ img {
   background-color: hsl(0, 0%, 70%);
 } */
 
-/* ? -- Data Reveal -- ? */
+/* ? -- Scrollbar End -- ? */
+/*
+/*
+/*
+/*
+/*
+/* ? -- Data Reveal Start -- ? */
+
 [data-reveal] {
-  opacity: 0;
-  transition: 0.9s ease;
+	opacity: 0;
+	transition: 1.2s ease;
 }
 
 [data-reveal="top"] {
-  transform: translateY(-30px);
+	transform: translateY(-30px);
 }
 
 [data-reveal="bottom"] {
-  transform: translateY(30px);
+	transform: translateY(30px);
 }
 
 [data-reveal="left"] {
-  transform: translateX(-30px);
+	transform: translateX(-30px);
 }
 
 [data-reveal="right"] {
-  transform: translateX(30px);
+	transform: translateX(30px);
+}
+
+[data-reveal="to-big"] {
+	transform: scale(0.9);
 }
 
 [data-reveal].revealed {
-  transform: translate(0);
-  opacity: 1;
+	transform: translate(0);
+	opacity: 1;
 }
 
-/* ? -- BG -- ? */
+/* ? -- Data Reveal End -- ? */
+/*
+/*
+/*
+/*
+/*
+/* ? -- Video BG Start -- ? */
+
 .video-background {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  z-index: -1; /* Ensures the background stays behind other content */
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	z-index: -1;
 }
 
 .video-background video {
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  filter: blur(15px); /* Adjust the blur intensity as needed */
-  object-fit: cover; /* Ensures the video covers the entire background */
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	filter: blur(15px);
+	object-fit: cover;
 }
 
 .video-background .dark-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(
-    0,
-    0,
-    0,
-    0.5
-  ); /* Adjust the last value (0.5) for darkness intensity */
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
 }
+
+/* ? -- Video BG End -- ? */
