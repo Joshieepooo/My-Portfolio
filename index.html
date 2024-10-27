@@ -6,17 +6,27 @@
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
 		<!-- * Tab * -->
+
 		<title>Joshua Lopez</title>
 		<meta name="description" content="Joshua Lopez @Portfolio" />
 
+		<!-- -->
+
 		<!-- * CSS * -->
+
 		<link rel="stylesheet" href="css/universal.css" />
 		<link rel="stylesheet" href="css/style.css" />
 
+		<!-- -->
+
 		<!-- * JS * -->
+
 		<script src="js/script.js" defer></script>
 
+		<!-- -->
+
 		<!-- * Fonts * -->
+
 		<link rel="stylesheet" href="css/fonts.css" />
 		<script
 			type="module"
@@ -29,27 +39,33 @@
 	</head>
 
 	<body>
-		<!-- ? Background ? -->
+		<!-- ? Background Start ? -->
+
 		<div class="video-background">
 			<video autoplay loop muted playsinline>
-				<source src="./motion backgrounds pack/31-44/37.mp4" type="video/mp4" />
+				<source src="./assets/Video-Bg.mp4" type="video/mp4" loading="lazy" />
 				Your browser does not support the video tag.
 			</video>
 			<div class="dark-overlay"></div>
 		</div>
 
-		<!-- ? Navbar ? -->
+		<!-- ? Background End ? -->
+
+		<!-- -->
+
+		<!-- -->
+
+		<!-- ? Navbar Start ? -->
+
 		<header class="navbar">
-			<div class="navbar-contents">
+			<div class="navbar-contents" data-reveal="to-big">
 				<!-- ! Logo ! -->
 				<div class="navbar-logo-container">
-					<a href="./index.html" class="navbar-me-name" data-reveal="top"
-						>Joshua Lopez</a
-					>
+					<a href="./index.html" class="navbar-me-name">Joshua Lopez</a>
 				</div>
 
 				<!-- ! Navigation ! -->
-				<ul class="navbar-container" data-reveal="top">
+				<ul class="navbar-container">
 					<li class="navbar-shrtct">
 						<a href="./index.html"> Home </a>
 					</li>
@@ -91,25 +107,30 @@
 			</div>
 		</header>
 
-		<!-- ? Home ? -->
-		<section class="home">
+		<!-- ? Navbar End ? -->
+
+		<!-- -->
+
+		<!-- -->
+
+		<!-- ? Home Start ? -->
+
+		<section class="home" data-reveal="to-big">
 			<div class="home-content">
-				<h1 class="home-primary" data-reveal="top">
-					Hey, My name is <br />Joshua Alen Lopez
-				</h1>
+				<h1 class="home-primary">Hey, My name is <br />Joshua Alen Lopez</h1>
 				<div class="home-info">
-					<p class="home-secondary" data-reveal="top">
+					<p class="home-secondary">
 						Driven by curiosity and creativity, I specialize in developing
 						user-friendly websites that solve real-world problems
 					</p>
 				</div>
 
 				<!-- ! Animated Button ! -->
-				<div class="home-button-area" data-reveal="top">
+				<div class="home-button-area">
 					<a
 						href="./fls/Lopez - CV.pdf"
 						class="home-button home-button-size"
-						download
+						target="_blank"
 					>
 						<span class="text">Download CV</span>
 						<span class="icon">
@@ -137,8 +158,15 @@
 			</div>
 		</section>
 
-		<!-- ? About ? -->
-		<section id="about" class="about about-container">
+		<!-- ? Home End ? -->
+
+		<!-- -->
+
+		<!-- -->
+
+		<!-- ? About Start ? -->
+
+		<section id="about" class="about about-container" data-reveal="to-big">
 			<div class="about-main">
 				<h2 class="about-main-content">
 					<span class="about-primary" data-reveal="top">About Me</span>
@@ -160,8 +188,9 @@
 								worked on
 								<strong>remote</strong>
 								both independently and in collaboration with talented
-								individuals, crafting <strong>websites</strong> for personal,
-								business, and consumer use.
+								individuals, crafting
+								<strong>websites</strong> for personal, business, and consumer
+								use.
 							</p>
 							<p class="about-oc-s-para">
 								As a <strong>fresh graduate</strong> from the
@@ -204,7 +233,14 @@
 			</div>
 		</section>
 
-		<!-- ? Projects ? -->
+		<!-- ? About End ? -->
+
+		<!-- -->
+
+		<!-- -->
+
+		<!-- ? Projects Start ? -->
+
 		<section id="projects" class="projects projects-container">
 			<div class="projects-main">
 				<div class="projects-main-content" data-reveal="top">
@@ -226,7 +262,7 @@
 				<ul class="projects-grid">
 					<!-- ! MGWR PC Online (Project 1) ! -->
 					<li>
-						<div class="project-card project-card-1">
+						<div class="project-card project-card-1" data-reveal="to-big">
 							<div class="project-card-content" data-reveal="left">
 								<p class="project-c-primary">Web Development</p>
 
@@ -241,7 +277,11 @@
 									insights.
 								</p>
 
-								<a href="./mgwrpconline-proj.html" class="project-oc-button">
+								<a
+									href="./project-1.html"
+									class="project-oc-button"
+									target="_blank"
+								>
 									<span class="project-button-text">See Project</span>
 
 									<ion-icon
@@ -253,7 +293,7 @@
 
 							<figure class="card-banner" data-reveal="right">
 								<img
-									src="./imgs/project-1.png"
+									src="./assets/project-1.png"
 									width="650"
 									height="370"
 									loading="lazy"
@@ -266,7 +306,7 @@
 
 					<!-- ! My Portfolio (Project 2) ! -->
 					<li>
-						<div class="project-card project-card-2">
+						<div class="project-card project-card-2" data-reveal="to-big">
 							<div class="project-card-content" data-reveal="right">
 								<p class="project-c-primary">Web Development</p>
 
@@ -281,7 +321,11 @@
 									and project highlights.
 								</p>
 
-								<a href="./index.html#projects" class="project-oc-button">
+								<a
+									href="./project-2.html"
+									class="project-oc-button"
+									target="_blank"
+								>
 									<span class="project-button-text">See Project</span>
 
 									<ion-icon
@@ -293,7 +337,7 @@
 
 							<figure class="card-banner" data-reveal="left">
 								<img
-									src="./imgs/project-2.png"
+									src="./assets/project-2.png"
 									width="600"
 									height="367"
 									loading="lazy"
@@ -381,7 +425,14 @@
 			</div>
 		</section>
 
-		<!-- ? Contacts ? -->
+		<!-- ? Projects End ? -->
+
+		<!-- -->
+
+		<!-- -->
+
+		<!-- ? Contacts Start ? -->
+
 		<section id="contact" class="contact contact-container">
 			<h2 class="contacts-main-content">
 				<h2 class="contact-primary" data-reveal="top">Contact</h2>
@@ -392,7 +443,7 @@
 			</h2>
 
 			<!-- ! Form ! -->
-			<div class="contact-form-container">
+			<div class="contact-form-container" data-reveal="to-big">
 				<form action="https://api.web3forms.com/submit" method="POST">
 					<input
 						type="hidden"
@@ -467,10 +518,17 @@
 			</div>
 		</section>
 
-		<!-- ? Footer ? -->
+		<!-- ? Contacts End ? -->
+
+		<!-- -->
+
+		<!-- -->
+
+		<!-- ? Footer Start ? -->
+
 		<footer>
 			<div class="footer-container">
-				<div class="footer-icons">
+				<div class="footer-icons" data-reveal="top">
 					<a href="https://www.facebook.com/Jsh.Lpz.21"
 						><i class="bx bxl-facebook"></i
 					></a>
@@ -487,7 +545,7 @@
 				</div>
 
 				<!-- ! Shortcuts ! -->
-				<div class="footer-shrtcts">
+				<div class="footer-shrtcts" data-reveal="top">
 					<ul>
 						<li><a href="./index.html">Home</a></li>
 						<li><a href="./index.html#about">About</a></li>
@@ -499,5 +557,7 @@
 
 			<!-- ! Can Add Copyrights & Scroll Up Button ! -->
 		</footer>
+
+		<!-- ? Footer End ? -->
 	</body>
 </html>
