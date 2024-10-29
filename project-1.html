@@ -10,15 +10,27 @@
 		<title>JL | MGWR PC Online</title>
 		<meta
 			name="description"
-			content="Joshua Lopez @Project 1 - MGWR PC Online"
+			content="Joshua Lopez Portfolio | Project - MGWR PC Online"
 		/>
+		<link rel="icon" href="assets/icon.svg" type="image/x-icon" />
+		<link rel="icon" href="assets/icon.png" type="image/png" />
 
 		<!-- -->
 
 		<!-- * CSS * -->
 
-		<link rel="stylesheet" href="css/universal.css" />
-		<link rel="stylesheet" href="css/projects.css" />
+		<link
+			rel="preload"
+			href="css/universal.css"
+			as="style"
+			onload="this.rel='stylesheet'"
+		/>
+		<link
+			rel="preload"
+			href="css/projects.css"
+			as="style"
+			onload="this.rel='stylesheet'"
+		/>
 
 		<!-- -->
 
@@ -30,7 +42,12 @@
 
 		<!-- * Fonts * -->
 
-		<link rel="stylesheet" href="css/fonts.css" />
+		<link
+			rel="preload"
+			href="css/fonts.css"
+			as="style"
+			onload="this.rel='stylesheet'"
+		/>
 		<script
 			type="module"
 			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
@@ -45,8 +62,8 @@
 		<!-- ? Background Start ? -->
 
 		<div class="video-background">
-			<video autoplay loop muted playsinline>
-				<source src="./assets/Video-Bg.mp4" type="video/mp4" loading="lazy" />
+			<video preload="none" autoplay muted loop playsinline>
+				<source src="assets/Video-Bg.mp4" type="video/mp4" />
 				Your browser does not support the video tag.
 			</video>
 			<div class="dark-overlay"></div>
@@ -64,24 +81,26 @@
 			<div class="navbar-contents" data-reveal="to-big">
 				<!-- ! Logo ! -->
 				<div class="navbar-logo-container">
-					<a href="./index.html" class="navbar-me-name">Joshua Lopez</a>
+					<a href="index.html" class="navbar-me-name">Joshua Lopez</a>
 				</div>
 
 				<!-- ! Navigation ! -->
-				<ul class="navbar-container">
-					<li class="navbar-shrtct">
-						<a href="./index.html"> Home </a>
-					</li>
-					<li class="navbar-shrtct">
-						<a href="./index.html#about"> About </a>
-					</li>
-					<li class="navbar-shrtct">
-						<a href="./index.html#projects"> Projects </a>
-					</li>
-					<li class="navbar-shrtct">
-						<a href="./index.html#contact"> Contact </a>
-					</li>
-				</ul>
+				<nav aria-label="Primary navigation">
+					<ul class="navbar-container">
+						<li class="navbar-shrtct">
+							<a href="index.html"> Home </a>
+						</li>
+						<li class="navbar-shrtct">
+							<a href="#about"> About </a>
+						</li>
+						<li class="navbar-shrtct">
+							<a href="#projects"> Projects </a>
+						</li>
+						<li class="navbar-shrtct">
+							<a href="#contact"> Contact </a>
+						</li>
+					</ul>
+				</nav>
 
 				<!-- ! Menu Button (Burger) ! -->
 				<div class="navbar-menu-button">
@@ -98,13 +117,13 @@
 						<a href="./index.html"> Home </a>
 					</li>
 					<li class="navbar-menu-shrtct">
-						<a href="./index.html#about"> About </a>
+						<a href="#about"> About </a>
 					</li>
 					<li class="navbar-menu-shrtct">
-						<a href="./index.html#projects"> Projects </a>
+						<a href="#projects"> Projects </a>
 					</li>
 					<li class="navbar-menu-shrtct">
-						<a href="./index.html#contact"> Contact </a>
+						<a href="#contact"> Contact </a>
 					</li>
 				</ul>
 			</div>
@@ -118,7 +137,11 @@
 
 		<!-- ? Project Intro Start ? -->
 
-		<section class="project-page" data-reveal="to-big">
+		<section
+			class="project-page"
+			data-reveal="to-big"
+			aria-label="Hero Section"
+		>
 			<div class="project-page-content">
 				<h1 class="project-page-primary">MGWR PC Online</h1>
 				<div class="project-page-info">
@@ -170,15 +193,20 @@
 
 		<!-- ? Project Description Start ? -->
 
-		<section class="project-bg project-page-container" data-reveal="to-big">
+		<section
+			class="project-bg project-page-container"
+			data-reveal="to-big"
+			aria-label="Description Section"
+		>
 			<div class="project-page-main">
 				<!-- ! image Container ! -->
 				<div class="project-page-img-container">
 					<div class="project-page-main-content">
 						<img
-							src="./assets/project-111.png"
+							src="./assets/project-1.png"
 							alt="Project Image"
 							class="project-page-img"
+							loading="lazy"
 							data-reveal="top"
 						/>
 					</div>
@@ -189,20 +217,20 @@
 								Project Overview
 							</h3>
 							<p class="pp-mc-content-secondary" data-reveal="left">
-								MGWRPConline serves as a powerful online storefront for a shop,
-								featuring a product catalog that supports promotions, sales, and
-								updates. The main sections include an "About Us" page for brand
-								story and values, a detailed pricelist for transparent customer
-								shopping, a feedback section for gathering user experiences, a
-								FAQ to address common inquiries, and a contact page to enable
-								direct communication.
+								<b>MGWR PC Online</b> serves as a powerful online storefront for
+								a shop, featuring a product catalog that supports promotions,
+								sales, and updates. The main sections include an "About Us" page
+								for brand story and values, a detailed "Pricelist" page for
+								transparent customer shopping, a "Feedback" page for gathering
+								user experiences, a "FAQ" page to address common inquiries, and
+								a contact page to enable direct communication.
 							</p>
 							<p class="pp-mc-content-secondary" data-reveal="left">
 								The website’s backend offers an admin portal with secure login
 								access, where administrators can track vital metrics through
 								analytics, manage inventory efficiently, handle reservations,
 								update content through a CMS, review customer feedback, and
-								monitor communications in the inbox. MGWRPConline effectively
+								monitor communications in the inbox. MGWR PC Online effectively
 								combines user-friendly customer features with robust
 								administrative tools to support a seamless shopping experience
 								and optimal management capabilities for the shop.
