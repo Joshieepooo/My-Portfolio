@@ -8,26 +8,47 @@
 		<!-- * Tab * -->
 
 		<title>Joshua Lopez</title>
-		<meta name="description" content="Joshua Lopez @Portfolio" />
+		<meta
+			name="description"
+			content="Joshua Lopez Portfolio | Web Developer and Designer"
+		/>
+		<link rel="icon" href="assets/icon.svg" type="image/x-icon" />
+		<link rel="icon" href="assets/icon.png" type="image/png" />
 
 		<!-- -->
 
 		<!-- * CSS * -->
 
-		<link rel="stylesheet" href="css/universal.css" />
-		<link rel="stylesheet" href="css/style.css" />
+		<link
+			rel="preload"
+			href="css/universal.css"
+			as="style"
+			onload="this.rel='stylesheet'"
+		/>
+		<link
+			rel="preload"
+			href="css/style.css"
+			as="style"
+			onload="this.rel='stylesheet'"
+		/>
 
 		<!-- -->
 
 		<!-- * JS * -->
 
 		<script src="js/script.js" defer></script>
+		<script src="js/navbar-animation.js" defer></script>
 
 		<!-- -->
 
 		<!-- * Fonts * -->
 
-		<link rel="stylesheet" href="css/fonts.css" />
+		<link
+			rel="preload"
+			href="css/fonts.css"
+			as="style"
+			onload="this.rel='stylesheet'"
+		/>
 		<script
 			type="module"
 			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
@@ -42,8 +63,8 @@
 		<!-- ? Background Start ? -->
 
 		<div class="video-background">
-			<video autoplay loop muted playsinline>
-				<source src="./assets/Video-Bg.mp4" type="video/mp4" loading="lazy" />
+			<video preload="none" autoplay muted loop playsinline>
+				<source src="assets/Video-Bg.mp4" type="video/mp4" />
 				Your browser does not support the video tag.
 			</video>
 			<div class="dark-overlay"></div>
@@ -61,24 +82,26 @@
 			<div class="navbar-contents" data-reveal="to-big">
 				<!-- ! Logo ! -->
 				<div class="navbar-logo-container">
-					<a href="./index.html" class="navbar-me-name">Joshua Lopez</a>
+					<a href="index.html" class="navbar-me-name">Joshua Lopez</a>
 				</div>
 
 				<!-- ! Navigation ! -->
-				<ul class="navbar-container">
-					<li class="navbar-shrtct">
-						<a href="./index.html"> Home </a>
-					</li>
-					<li class="navbar-shrtct">
-						<a href="./index.html#about"> About </a>
-					</li>
-					<li class="navbar-shrtct">
-						<a href="./index.html#projects"> Projects </a>
-					</li>
-					<li class="navbar-shrtct">
-						<a href="./index.html#contact"> Contact </a>
-					</li>
-				</ul>
+				<nav aria-label="Primary navigation">
+					<ul class="navbar-container">
+						<li class="navbar-shrtct">
+							<a href="index.html"> Home </a>
+						</li>
+						<li class="navbar-shrtct">
+							<a href="#about"> About </a>
+						</li>
+						<li class="navbar-shrtct">
+							<a href="#projects"> Projects </a>
+						</li>
+						<li class="navbar-shrtct">
+							<a href="#contact"> Contact </a>
+						</li>
+					</ul>
+				</nav>
 
 				<!-- ! Menu Button (Burger) ! -->
 				<div class="navbar-menu-button">
@@ -95,13 +118,13 @@
 						<a href="./index.html"> Home </a>
 					</li>
 					<li class="navbar-menu-shrtct">
-						<a href="./index.html#about"> About </a>
+						<a href="#about"> About </a>
 					</li>
 					<li class="navbar-menu-shrtct">
-						<a href="./index.html#projects"> Projects </a>
+						<a href="#projects"> Projects </a>
 					</li>
 					<li class="navbar-menu-shrtct">
-						<a href="./index.html#contact"> Contact </a>
+						<a href="#contact"> Contact </a>
 					</li>
 				</ul>
 			</div>
@@ -115,7 +138,7 @@
 
 		<!-- ? Home Start ? -->
 
-		<section class="home" data-reveal="to-big">
+		<section class="home" data-reveal="to-big" aria-label="Home Section">
 			<div class="home-content">
 				<h1 class="home-primary">Hey, My name is <br />Joshua Alen Lopez</h1>
 				<div class="home-info">
@@ -166,7 +189,12 @@
 
 		<!-- ? About Start ? -->
 
-		<section id="about" class="about about-container" data-reveal="to-big">
+		<section
+			id="about"
+			class="about about-container"
+			data-reveal="to-big"
+			aria-label="About Section"
+		>
 			<div class="about-main">
 				<h2 class="about-main-content">
 					<span class="about-primary" data-reveal="top">About Me</span>
@@ -180,8 +208,8 @@
 					<!-- ! Get To Know Me ! -->
 					<div>
 						<h3 class="about-oc-primary" data-reveal="left">Get to know me!</h3>
-						<div class="about-oc-secondary" data-reveal="left">
-							<p class="about-oc-s-para">
+						<div class="about-oc-secondary">
+							<p class="about-oc-s-para" data-reveal="left">
 								Hey! It's
 								<strong>Joshua Lopez</strong>, a
 								<strong>Web Developer</strong> based in Biñan City, Laguna. I've
@@ -192,7 +220,8 @@
 								<strong>websites</strong> for personal, business, and consumer
 								use.
 							</p>
-							<p class="about-oc-s-para">
+							<br />
+							<p class="about-oc-s-para" data-reveal="left">
 								As a <strong>fresh graduate</strong> from the
 								<strong>Polytechnic University of the Philippines</strong>, I'm
 								passionate about exploring the digital product landscape. While
@@ -204,6 +233,8 @@
 								<a
 									href="./#contact"
 									class="about-button about-button-size button-color"
+									data-reveal="left"
+									class="delay-3"
 									>Contact
 								</a>
 							</div>
@@ -241,7 +272,11 @@
 
 		<!-- ? Projects Start ? -->
 
-		<section id="projects" class="projects projects-container">
+		<section
+			id="projects"
+			class="projects projects-container"
+			aria-label="Projects Section"
+		>
 			<div class="projects-main">
 				<div class="projects-main-content" data-reveal="top">
 					<div>
@@ -277,17 +312,24 @@
 									insights.
 								</p>
 
-								<a
-									href="./project-1.html"
-									class="project-oc-button"
-									target="_blank"
-								>
-									<span class="project-button-text">See Project</span>
-
-									<ion-icon
-										name="arrow-forward-outline"
-										aria-hidden="true"
-									></ion-icon>
+								<a href="project-1.html" target="_blank">
+									<button class="animated-button-1">
+										<span class="hover-underline-animation"> See Project </span>
+										<svg
+											id="arrow-horizontal"
+											xmlns="http://www.w3.org/2000/svg"
+											width="30"
+											height="10"
+											viewBox="0 0 46 16"
+										>
+											<path
+												id="Path_10"
+												data-name="Path 10"
+												d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+												transform="translate(30)"
+											></path>
+										</svg>
+									</button>
 								</a>
 							</div>
 
@@ -297,7 +339,7 @@
 									width="650"
 									height="370"
 									loading="lazy"
-									alt="Web Design"
+									alt="MGWR PC Online Img"
 									class="w-100"
 								/>
 							</figure>
@@ -321,17 +363,24 @@
 									and project highlights.
 								</p>
 
-								<a
-									href="./project-2.html"
-									class="project-oc-button"
-									target="_blank"
-								>
-									<span class="project-button-text">See Project</span>
-
-									<ion-icon
-										name="arrow-forward-outline"
-										aria-hidden="true"
-									></ion-icon>
+								<a href="project-2.html" target="_blank">
+									<button class="animated-button-1">
+										<span class="hover-underline-animation"> See Project </span>
+										<svg
+											id="arrow-horizontal"
+											xmlns="http://www.w3.org/2000/svg"
+											width="30"
+											height="10"
+											viewBox="0 0 46 16"
+										>
+											<path
+												id="Path_10"
+												data-name="Path 10"
+												d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+												transform="translate(30)"
+											></path>
+										</svg>
+									</button>
 								</a>
 							</div>
 
@@ -341,7 +390,7 @@
 									width="600"
 									height="367"
 									loading="lazy"
-									alt="Web Design"
+									alt="My Portfolio Img"
 									class="w-100"
 								/>
 							</figure>
@@ -433,7 +482,11 @@
 
 		<!-- ? Contacts Start ? -->
 
-		<section id="contact" class="contact contact-container">
+		<section
+			id="contact"
+			class="contact contact-container"
+			aria-label="Contact Section"
+		>
 			<h2 class="contacts-main-content">
 				<h2 class="contact-primary" data-reveal="top">Contact</h2>
 				<span class="contact-secondary" data-reveal="top">
@@ -484,6 +537,7 @@
 							>Subject
 						</label>
 						<input
+							required
 							placeholder="Enter Subject"
 							type="text"
 							class="contact-form-input"
@@ -503,8 +557,7 @@
 							name="message"
 							id="message"
 							data-reveal="right"
-						>
-						</textarea>
+						></textarea>
 					</div>
 					<button
 						type="submit"
@@ -526,20 +579,24 @@
 
 		<!-- ? Footer Start ? -->
 
-		<footer>
+		<footer aria-label="Footer Section">
 			<div class="footer-container">
 				<div class="footer-icons" data-reveal="top">
-					<a href="https://www.facebook.com/Jsh.Lpz.21"
+					<a href="https://www.facebook.com/Jsh.Lpz.21" target="_blank"
 						><i class="bx bxl-facebook"></i
 					></a>
-					<a href="https://www.instagram.com/jsh.lpz.main/"
+					<a href="https://www.instagram.com/jsh.lpz.main/" target="_blank"
 						><i class="bx bxl-instagram"></i
 					></a>
-					<a href="https://x.com/iJoshiepooo"><i class="bx bxl-twitter"></i></a>
-					<a href="https://www.linkedin.com/in/joshua-alen-lopez-442287255/"
+					<a href="https://x.com/iJoshiepooo" target="_blank"
+						><i class="bx bxl-twitter"></i
+					></a>
+					<a
+						href="https://www.linkedin.com/in/joshua-alen-lopez-442287255/"
+						target="_blank"
 						><i class="bx bxl-linkedin"></i
 					></a>
-					<a href="https://github.com/Joshieepooo"
+					<a href="https://github.com/Joshieepooo" target="_blank"
 						><i class="bx bxl-github"></i
 					></a>
 				</div>
@@ -548,9 +605,9 @@
 				<div class="footer-shrtcts" data-reveal="top">
 					<ul>
 						<li><a href="./index.html">Home</a></li>
-						<li><a href="./index.html#about">About</a></li>
-						<li><a href="./index.html#projects">Projects</a></li>
-						<li><a href="./index.html#contact">Contact</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#projects">Projects</a></li>
+						<li><a href="#contact">Contact</a></li>
 					</ul>
 				</div>
 			</div>
