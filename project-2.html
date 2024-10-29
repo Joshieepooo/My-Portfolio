@@ -8,15 +8,29 @@
 		<!-- * Tab * -->
 
 		<title>JL | My Portfolio</title>
-		<meta name="description" content="Joshua Lopez @Project 2 - My Portfolio" />
+		<meta
+			name="description"
+			content="Joshua Lopez Portfolio | Project - My Portfolio"
 		/>
+		<link rel="icon" href="assets/icon.svg" type="image/x-icon" />
+		<link rel="icon" href="assets/icon.png" type="image/png" />
 
 		<!-- -->
 
 		<!-- * CSS * -->
 
-		<link rel="stylesheet" href="css/universal.css" />
-		<link rel="stylesheet" href="css/projects.css" />
+		<link
+			rel="preload"
+			href="css/universal.css"
+			as="style"
+			onload="this.rel='stylesheet'"
+		/>
+		<link
+			rel="preload"
+			href="css/projects.css"
+			as="style"
+			onload="this.rel='stylesheet'"
+		/>
 
 		<!-- -->
 
@@ -28,7 +42,12 @@
 
 		<!-- * Fonts * -->
 
-		<link rel="stylesheet" href="css/fonts.css" />
+		<link
+			rel="preload"
+			href="css/fonts.css"
+			as="style"
+			onload="this.rel='stylesheet'"
+		/>
 		<script
 			type="module"
 			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
@@ -43,8 +62,8 @@
 		<!-- ? Background Start ? -->
 
 		<div class="video-background">
-			<video autoplay loop muted playsinline>
-				<source src="./assets/Video-Bg.mp4" type="video/mp4" loading="lazy" />
+			<video preload="none" autoplay muted loop playsinline>
+				<source src="assets/Video-Bg.mp4" type="video/mp4" />
 				Your browser does not support the video tag.
 			</video>
 			<div class="dark-overlay"></div>
@@ -62,24 +81,26 @@
 			<div class="navbar-contents" data-reveal="to-big">
 				<!-- ! Logo ! -->
 				<div class="navbar-logo-container">
-					<a href="./index.html" class="navbar-me-name">Joshua Lopez</a>
+					<a href="index.html" class="navbar-me-name">Joshua Lopez</a>
 				</div>
 
 				<!-- ! Navigation ! -->
-				<ul class="navbar-container">
-					<li class="navbar-shrtct">
-						<a href="./index.html"> Home </a>
-					</li>
-					<li class="navbar-shrtct">
-						<a href="./index.html#about"> About </a>
-					</li>
-					<li class="navbar-shrtct">
-						<a href="./index.html#projects"> Projects </a>
-					</li>
-					<li class="navbar-shrtct">
-						<a href="./index.html#contact"> Contact </a>
-					</li>
-				</ul>
+				<nav aria-label="Primary navigation">
+					<ul class="navbar-container">
+						<li class="navbar-shrtct">
+							<a href="index.html"> Home </a>
+						</li>
+						<li class="navbar-shrtct">
+							<a href="#about"> About </a>
+						</li>
+						<li class="navbar-shrtct">
+							<a href="#projects"> Projects </a>
+						</li>
+						<li class="navbar-shrtct">
+							<a href="#contact"> Contact </a>
+						</li>
+					</ul>
+				</nav>
 
 				<!-- ! Menu Button (Burger) ! -->
 				<div class="navbar-menu-button">
@@ -96,13 +117,13 @@
 						<a href="./index.html"> Home </a>
 					</li>
 					<li class="navbar-menu-shrtct">
-						<a href="./index.html#about"> About </a>
+						<a href="#about"> About </a>
 					</li>
 					<li class="navbar-menu-shrtct">
-						<a href="./index.html#projects"> Projects </a>
+						<a href="#projects"> Projects </a>
 					</li>
 					<li class="navbar-menu-shrtct">
-						<a href="./index.html#contact"> Contact </a>
+						<a href="#contact"> Contact </a>
 					</li>
 				</ul>
 			</div>
@@ -118,12 +139,12 @@
 
 		<section class="project-page" data-reveal="to-big">
 			<div class="project-page-content">
-				<h1 class="project-page-primary">MGWR PC Online</h1>
+				<h1 class="project-page-primary">My Portfolio</h1>
 				<div class="project-page-info">
 					<p class="project-page-secondary">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
-						in numquam incidunt earum quaerat cum fuga, atque similique natus
-						nobis sit.
+						Showcasing a range of dynamic web projects, my portfolio highlights
+						my commitment to crafting solutions that drive efficiency and engage
+						users.
 					</p>
 				</div>
 
@@ -177,6 +198,7 @@
 							src="./assets/project-2.png"
 							alt="Project Image"
 							class="project-page-img"
+							loading="lazy"
 							data-reveal="top"
 						/>
 					</div>
@@ -187,20 +209,14 @@
 								Project Overview
 							</h3>
 							<p class="pp-mc-content-secondary" data-reveal="left">
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
-								alias tenetur minus quaerat aliquid, aut provident blanditiis,
-								deleniti aspernatur ipsam eaque veniam voluptatem corporis vitae
-								mollitia laborum corrupti ullam rem. Lorem ipsum dolor sit amet
-								consectetur adipisicing elit. Neque alias tenetur minus quaerat
-								aliquid, aut provident blanditiis, deleniti aspernatur ipsam
-								eaque veniam voluptatem corporis vitae mollitia laborum corrupti
-								ullam rem?
-							</p>
-							<p class="pp-mc-content-secondary" data-reveal="left">
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
-								alias tenetur minus quaerat aliquid, aut provident blanditiis,
-								deleniti aspernatur ipsam eaque veniam voluptatem corporis vitae
-								mollitia laborum corrupti ullam rem?
+								<b>My Portfolio</b> showcases my work as a Web Developer,
+								highlighting projects that focus on creating responsive and
+								functional web applications. Each project is built with a strong
+								foundation in HTML, CSS, and JavaScript, demonstrating my skills
+								in front-end design, interactive elements, and user-friendly
+								layouts. Through this portfolio, I aim to present solutions that
+								are both technically sound and visually appealing, showing my
+								ability to bring innovative ideas to life in a digital space
 							</p>
 						</div>
 
