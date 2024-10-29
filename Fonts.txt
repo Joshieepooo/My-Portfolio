@@ -1,0 +1,26 @@
+/*  -------------------
+
+List of Fonts:
+    Aeonik
+    Inter
+    Saira
+    Mulish
+    Fira Sans
+    Satoshi
+    Thunder
+    DM Sans
+    Manrope
+    Alegreya Sans
+    Metrophobic
+    Montserrat
+    Plus Jakarta Sans
+    Merriweather
+    Work Sans
+    Source Serif Pro
+    DM Serif Display
+    Signika
+    Galdeano
+    Avenir Lt Std
+    Open Sans
+
+------------------- */
