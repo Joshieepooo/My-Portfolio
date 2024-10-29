@@ -1,48 +1,21 @@
 @import url("https://assets.soracom.io/fonts/aeonik/Aeonik.css");
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.cdnfonts.com/css/satoshi');
-@import url('https://fonts.cdnfonts.com/css/thunder-2');
-@import url('https://fonts.cdnfonts.com/css/dm-sans');
-@import url('https://fonts.cdnfonts.com/css/manrope');
-@import url('https://fonts.cdnfonts.com/css/alegreya-sans');
-@import url('https://fonts.cdnfonts.com/css/metrophobic');
-@import url('https://fonts.cdnfonts.com/css/montserrat');
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.cdnfonts.com/css/source-serif-pro');
-@import url('https://fonts.cdnfonts.com/css/dm-serif-display');
-@import url('https://fonts.cdnfonts.com/css/signika');
-@import url('https://fonts.cdnfonts.com/css/galdeano');
-@import url('https://fonts.cdnfonts.com/css/avenir-lt-pro');
-@import url('https://fonts.cdnfonts.com/css/open-sans');
-
-/*  -------------------
-
-List of Fonts:
-    Aeonik
-    Inter
-    Saira
-    Mulish
-    Fira Sans
-    Satoshi
-    Thunder
-    DM Sans
-    Manrope
-    Alegreya Sans
-    Metrophobic
-    Montserrat
-    Plus Jakarta Sans
-    Merriweather
-    Work Sans
-    Source Serif Pro
-    DM Serif Display
-    Signika
-    Galdeano
-    Avenir Lt Std
-    Open Sans
-
-------------------- */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Saira:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Saira:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Saira:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.cdnfonts.com/css/satoshi");
+@import url("https://fonts.cdnfonts.com/css/thunder-2");
+@import url("https://fonts.cdnfonts.com/css/dm-sans");
+@import url("https://fonts.cdnfonts.com/css/manrope");
+@import url("https://fonts.cdnfonts.com/css/alegreya-sans");
+@import url("https://fonts.cdnfonts.com/css/metrophobic");
+@import url("https://fonts.cdnfonts.com/css/montserrat");
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.cdnfonts.com/css/source-serif-pro");
+@import url("https://fonts.cdnfonts.com/css/dm-serif-display");
+@import url("https://fonts.cdnfonts.com/css/signika");
+@import url("https://fonts.cdnfonts.com/css/galdeano");
+@import url("https://fonts.cdnfonts.com/css/avenir-lt-pro");
+@import url("https://fonts.cdnfonts.com/css/open-sans");
