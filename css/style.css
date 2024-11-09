@@ -4,10 +4,6 @@
 	position: relative;
 }
 @media only screen and (max-width: 37.5em) {
-	.home {
-		height: 678px;
-		margin-top: -200px;
-	}
 }
 .home-content {
 	left: 50%;
@@ -15,14 +11,30 @@
 	position: absolute;
 	top: 50%;
 	transform: translate(-50%, -50%);
-	width: 92%;
+	width: 80%;
 }
 @media only screen and (max-width: 37.5em) {
 	.home-content {
+		width: 90%;
 		margin: auto;
-		padding: 19rem 0 13rem;
+		padding-top: 30rem;
 		position: static;
 		transform: translate(0);
+	}
+}
+@media only screen and (max-width: 425px) {
+	.home-content {
+		padding-top: 25rem;
+	}
+}
+@media only screen and (max-width: 375px) {
+	.home-content {
+		padding-top: 20rem;
+	}
+}
+@media only screen and (max-width: 325px) {
+	.home-content {
+		padding-top: 25rem;
 	}
 }
 .home-primary {
@@ -35,7 +47,22 @@
 }
 @media only screen and (max-width: 37.5em) {
 	.home-primary {
-		font-size: 4.5rem;
+		font-size: 4rem;
+	}
+}
+@media only screen and (max-width: 425px) {
+	.home-primary {
+		font-size: 4rem;
+	}
+}
+@media only screen and (max-width: 375px) {
+	.home-primary {
+		font-size: 3.5rem;
+	}
+}
+@media only screen and (max-width: 325px) {
+	.home-primary {
+		font-size: 4rem;
 	}
 }
 .home-info {
@@ -191,6 +218,7 @@
 	.about-other-contents {
 		grid-template-columns: 1fr;
 		grid-gap: 8rem;
+		text-align: center;
 	}
 }
 .about-oc-primary {
@@ -211,8 +239,16 @@
 	font-size: 1.8rem;
 	line-height: 1.7;
 	margin-bottom: 1rem;
+	width: 100%;
 	max-width: 60rem;
 	text-align: justify;
+}
+
+@media (max-width: 900px) {
+	.about-oc-secondary {
+		max-width: 100%;
+		text-align: center;
+	}
 }
 .about-oc-s-para--hl {
 	font-weight: 700;
@@ -259,6 +295,12 @@
 .skills {
 	display: flex;
 	flex-wrap: wrap;
+	align-items: center;
+}
+@media only screen and (max-width: 900px) {
+	.skills {
+		justify-content: center;
+	}
 }
 .skills-set {
 	background: var(--theme4);
