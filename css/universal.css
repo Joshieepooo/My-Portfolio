@@ -164,6 +164,12 @@ img {
 	transition: transform 0.5s ease, opacity 0.3s ease;
 	width: 70%;
 }
+@media only screen and (max-width: 768px) {
+	.navbar-shrtct a:before {
+		bottom: 10px;
+		height: 5px;
+	}
+}
 @media only screen and (max-width: 56.25em) {
 	.navbar-shrtct {
 		font-size: 1.5rem;
@@ -297,6 +303,11 @@ img {
 	transform: translateX(-50%) scaleX(0);
 	transition: transform 0.2s linear;
 	width: 100%;
+}
+@media only screen and (max-width: 37.5em) {
+	.navbar-menu-shrtct a:before {
+		display: none;
+	}
 }
 .navbar-menu-shrtct a:hover:before {
 	opacity: 1;
