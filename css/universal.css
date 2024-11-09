@@ -320,6 +320,12 @@ footer {
 	padding: 70px 30px 20px;
 	width: 100%;
 }
+@media only screen and (max-width: 37.5em) {
+	.footer-container {
+		padding: 70px 0px 20px;
+		width: 100%;
+	}
+}
 .footer-icons {
 	display: flex;
 	justify-content: center;
@@ -396,6 +402,12 @@ footer {
 	margin: 10px;
 	opacity: 0.7;
 	text-decoration: none;
+}
+@media only screen and (max-width: 37.5em) {
+	.copyright p {
+		font-size: 1.1em;
+		margin: 5px;
+	}
 }
 .copyright p span {
 	color: var(--theme3);
