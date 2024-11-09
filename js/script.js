@@ -56,3 +56,40 @@ const addEventOnElements = function (elements, eventType, callback) {
 		elements[i].addEventListener(eventType, callback);
 	}
 };
+
+const skills = document.querySelectorAll(".skills-set");
+
+skills.forEach((skill) => {
+	skill.style.background = `var(--theme4)`;
+});
+
+skills.forEach((skill) => {
+	skill.addEventListener("mouseenter", () => {
+		skills.forEach((s) => {
+			s.classList.remove("active");
+			s.style.background = `rgba(69, 162, 158, 0.3)`;
+			s.style.color = `rgba(0, 0, 0, 0.3)`;
+		});
+
+		skill.classList.add("active");
+		skill.style.background = `var(--theme)`;
+		skill.style.color = `var(--ivory)`;
+	});
+
+	skill.addEventListener("mouseleave", () => {
+		skill.classList.remove("active");
+		skills.forEach((s) => {
+			s.style.background = `var(--theme4)`;
+			s.style.color = `var(--textnBG-color)`;
+		});
+	});
+});
+
+var loader = document.getElementById("preloader");
+window.addEventListener("load", function () {
+	loader.classList.add("fade-out");
+
+	setTimeout(function () {
+		loader.style.display = "none";
+	}, 1200);
+});
