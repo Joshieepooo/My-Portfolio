@@ -3,12 +3,6 @@
 	height: 100vh;
 	position: relative;
 }
-@media only screen and (max-width: 37.5em) {
-	.project-page {
-		height: 678px;
-		margin-top: -200px;
-	}
-}
 .project-page-content {
 	position: absolute;
 	top: 50%;
@@ -19,10 +13,21 @@
 }
 @media only screen and (max-width: 37.5em) {
 	.project-page-content {
-		padding: 19rem 0 13rem 0;
+		width: 90%;
 		margin: auto;
+		padding-top: 30rem;
 		position: static;
-		transform: translate(0, 0);
+		transform: translate(0);
+	}
+}
+@media only screen and (max-width: 425px) {
+	.project-page-content {
+		padding-top: 25rem;
+	}
+}
+@media only screen and (max-width: 375px) {
+	.project-page-content {
+		padding-top: 20rem;
 	}
 }
 .project-page-primary {
@@ -35,7 +40,22 @@
 }
 @media only screen and (max-width: 37.5em) {
 	.project-page-primary {
-		font-size: 4.5rem;
+		font-size: 4rem;
+	}
+}
+@media only screen and (max-width: 425px) {
+	.project-page-primary {
+		font-size: 4rem;
+	}
+}
+@media only screen and (max-width: 375px) {
+	.project-page-primary {
+		font-size: 3.5rem;
+	}
+}
+@media only screen and (max-width: 325px) {
+	.project-page-primary {
+		font-size: 4rem;
 	}
 }
 .project-page-info {
@@ -52,7 +72,7 @@
 }
 @media only screen and (max-width: 37.5em) {
 	.project-page-secondary {
-		font-size: 2rem;
+		font-size: 1.8rem;
 	}
 }
 .project-page-button-area {
@@ -146,6 +166,11 @@
 .project-page-img {
 	width: 100%;
 }
+@media only screen and (max-width: 56.25em) {
+	.project-page-img {
+		margin-top: -80px;
+	}
+}
 .project-page-main-content {
 	padding: 8rem 0;
 	max-width: 90rem;
@@ -154,10 +179,18 @@
 @media only screen and (max-width: 56.25em) {
 	.project-page-main-content {
 		margin-bottom: 0;
+		text-align: center;
 	}
 }
 .project-page-mc-content {
 	margin: -7rem 0 7rem 0;
+}
+@media only screen and (max-width: 56.25em) {
+	.project-page-mc-content {
+		grid-template-columns: 1fr;
+		grid-gap: 8rem;
+		text-align: center;
+	}
 }
 .pp-mc-content-primary {
 	font-weight: 700;
@@ -176,12 +209,23 @@
 	color: grey;
 	margin-bottom: 2rem;
 }
+
 .pp-mc-tools {
 	margin: 0 0 7rem 0;
+}
+@media only screen and (max-width: 900px) {
+	.pp-mc-content-primary h3 {
+		justify-content: center;
+	}
 }
 .tools {
 	display: flex;
 	flex-wrap: wrap;
+}
+@media only screen and (max-width: 900px) {
+	.tools {
+		justify-content: center;
+	}
 }
 .tools-set {
 	padding: 1rem 2rem;
@@ -234,6 +278,12 @@
 .pp-sl-button-size {
 	padding: 1.5rem 5rem;
 	font-size: 1.6rem;
+}
+@media only screen and (max-width: 320px) {
+	.pp-sl-button {
+		padding: 1.5rem 2rem;
+		font-size: 1.6rem;
+	}
 }
 .button-color {
 	background: var(--theme4);
