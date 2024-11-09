@@ -398,15 +398,15 @@ footer {
 }
 [data-reveal="top"] {
 	transform: translateY(-50px);
-	transition: 0.5s ease;
+	transition: 1.5s ease;
 }
 [data-reveal="top2"] {
 	transform: translateY(-50px);
-	transition: 1s ease;
+	transition: 2s ease;
 }
 [data-reveal="top3"] {
 	transform: translateY(-50px);
-	transition: 1.5s ease;
+	transition: 2.5s ease;
 }
 [data-reveal="bottom"] {
 	transform: translateY(50px);
