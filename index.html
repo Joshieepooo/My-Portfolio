@@ -593,17 +593,20 @@
 
 			<!-- ! Form ! -->
 			<div class="contact-form-container" data-reveal="to-big">
-				<form action="https://api.web3forms.com/submit" method="POST">
+				<form
+					id="contact-form"
+					action="https://api.web3forms.com/submit"
+					method="POST"
+				>
 					<input
 						type="hidden"
 						name="access_key"
 						value="fa81ec5e-a698-45f6-bce3-0034396ff3b0"
 					/>
-
 					<div class="contact-form-field">
 						<label class="contact-form-label" for="name" data-reveal="left"
-							>Name
-						</label>
+							>Name</label
+						>
 						<input
 							required
 							placeholder="Enter Your Name"
@@ -616,8 +619,8 @@
 					</div>
 					<div class="contact-form-field">
 						<label class="contact-form-label" for="email" data-reveal="left"
-							>Email
-						</label>
+							>Email</label
+						>
 						<input
 							required
 							placeholder="Enter Your Email"
@@ -630,8 +633,8 @@
 					</div>
 					<div class="contact-form-field">
 						<label class="contact-form-label" for="subject" data-reveal="left"
-							>Subject
-						</label>
+							>Subject</label
+						>
 						<input
 							required
 							placeholder="Enter Subject"
@@ -644,8 +647,8 @@
 					</div>
 					<div class="contact-form-field">
 						<label class="contact-form-label" for="message" data-reveal="left"
-							>Message
-						</label>
+							>Message</label
+						>
 						<textarea
 							required
 							class="contact-form-input"
@@ -666,6 +669,24 @@
 				</form>
 			</div>
 		</section>
+
+		<!-- ! Modal ! -->
+		<div class="contact-modal-bg" onclick="toggleModal()"></div>
+		<div class="contact-main-modal">
+			<div class="contact-modal-content">
+				<h2 class="cm-primary">Thank You!</h2>
+				<p class="cm-secondary">
+					Your message has been successfully sent. I will get back to you as
+					soon as possible.
+				</p>
+				<button
+					onclick="finishProcess();"
+					class="contact-modal-button cm-button-size"
+				>
+					Finish
+				</button>
+			</div>
+		</div>
 
 		<!-- ? Contacts End ? -->
 
