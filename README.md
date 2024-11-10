@@ -4,12 +4,22 @@ Welcome to my portfolio repository! This project showcases my web development sk
 
 ## Table of Contents
 
+- [Portfolio Preview](#portfolio-preview)
+- [Live URL](#live-url)
 - [Features](#features)
 - [Technologies Used](#technologies-used)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
 - [License](#license)
+
+## Portfolio Preview
+
+![Portfolio Preview](/assets/Preview.png)
+
+## Live URL
+
+You can view the live version of this project at: [https://joshua-lopez.vercel.app](https://joshua-lopez.vercel.app/)
 
 ## Features
 
