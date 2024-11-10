@@ -42,7 +42,6 @@ body {
 	line-height: 1.5;
 	overflow-x: hidden;
 	overflow-y: scroll;
-	margin-top: 2rem;
 }
 a {
 	color: inherit;
@@ -74,6 +73,7 @@ img {
 	transform: translate(-50%);
 	width: calc(100% - 4rem);
 	z-index: 1;
+	margin-top: 2rem;
 }
 .navbar-contents {
 	align-items: center;
