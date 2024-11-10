@@ -93,3 +93,46 @@ window.addEventListener("load", function () {
 		loader.style.display = "none";
 	}, 1200);
 });
+
+const toggleModal = () => document.body.classList.add("open");
+
+const finishProcess = () => {
+	document.body.classList.remove("open");
+	window.location.reload();
+};
+
+document
+	.querySelector(".contact-modal-bg")
+	.addEventListener("click", function (e) {
+		e.stopPropagation();
+	});
+
+const preventScrolling = () => {
+	if (document.body.classList.contains("open")) {
+		document.body.style.overflow = "hidden";
+	} else {
+		document.body.style.overflow = "";
+	}
+};
+
+document.body.addEventListener("classChange", preventScrolling);
+
+document.getElementById("contact-form").onsubmit = function (event) {
+	event.preventDefault();
+	var form = event.target;
+
+	fetch(form.action, {
+		method: "POST",
+		body: new FormData(form),
+	})
+		.then(function (response) {
+			if (response.ok) {
+				toggleModal(); // Show modal
+			} else {
+				alert("Error submitting the form. Please try again.");
+			}
+		})
+		.catch(function (error) {
+			alert("Error: " + error);
+		});
+};
